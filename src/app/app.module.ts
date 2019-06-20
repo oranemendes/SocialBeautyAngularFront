@@ -24,6 +24,7 @@ import { NewAnnonceComponent } from './components/annonces/new-annonce/new-annon
 import { SingleBonplanComponent } from './components/bonsplans/single-bonplan/single-bonplan.component';
 import { BonplanCommentComponent } from './components/bonsplans/bonplan-comment/bonplan-comment.component';
 import { NewBonplanComponent } from './components/bonsplans/new-bonplan/new-bonplan.component';
+import { HomeComponent } from './pages/users/home/home.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { NewBonplanComponent } from './components/bonsplans/new-bonplan/new-bonp
     NewAnnonceComponent,
     SingleBonplanComponent,
     BonplanCommentComponent,
-    NewBonplanComponent
+    NewBonplanComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule
