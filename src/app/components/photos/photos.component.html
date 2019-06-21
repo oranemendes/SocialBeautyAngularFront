@@ -1,0 +1,6 @@
+<div class="container" style="padding-top: 20px;">
+  <div class="card-deck">
+    <div class="card" *ngFor="let photo of photos" style="max-width: 30%; min-width: 30%; margin: 10px;">
+      <app-single-photo [photo]="photo"></app-single-photo>
+  </div>
+</div>

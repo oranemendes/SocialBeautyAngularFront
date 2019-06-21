@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { UsersComponent } from './pages/users/users.component';
@@ -15,6 +16,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SingleArticleComponent } from './components/articles/single-article/single-article.component';
 import { ArticleCommentComponent } from './components/articles/article-comment/article-comment.component';
 import { NewArticleComponent } from './components/articles/new-article/new-article.component';
+import { PhotosComponent} from './components/photos/photos.component';
 import { SinglePhotoComponent } from './components/photos/single-photo/single-photo.component';
 import { PhotoCommentComponent } from './components/photos/photo-comment/photo-comment.component';
 import { NewPhotoComponent } from './components/photos/new-photo/new-photo.component';
@@ -25,6 +27,8 @@ import { SingleBonplanComponent } from './components/bonsplans/single-bonplan/si
 import { BonplanCommentComponent } from './components/bonsplans/bonplan-comment/bonplan-comment.component';
 import { NewBonplanComponent } from './components/bonsplans/new-bonplan/new-bonplan.component';
 import { HomeComponent } from './pages/users/home/home.component';
+import { NgxPopper } from 'angular-popper';
+import {AppRoutingModule} from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -42,6 +46,7 @@ import { HomeComponent } from './pages/users/home/home.component';
     SingleArticleComponent,
     ArticleCommentComponent,
     NewArticleComponent,
+    PhotosComponent,
     SinglePhotoComponent,
     PhotoCommentComponent,
     NewPhotoComponent,
@@ -54,7 +59,10 @@ import { HomeComponent } from './pages/users/home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxPopper,
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,8 @@
-<p>
-  single-photo works!
-</p>
+
+    <img class="card-img-top" src="{{ photo.imagePath }}" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title">Catégorie : {{ photo.category }}</h6>
+      <p class="card-text">{{ photo.content }}</p>
+      <p class="card-text"><small class="text-muted">Publié par {{ photo.author }} le {{ photo.created_at | date:"dd/MM/yy" }}</small></p>
+    </div>
+

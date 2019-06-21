@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-single-photo',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./single-photo.component.css']
 })
 export class SinglePhotoComponent implements OnInit {
+
+  @Input() photo;
 
   constructor() { }
 
